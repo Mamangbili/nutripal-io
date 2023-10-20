@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#nutrition tr {
+  font-size: 0.85rem;
+  border-bottom: 1px solid black;
+  & :nth-child(n + 2) {
+    text-align: center;
+  }
+
+  & td {
+    width: 33%;
+    padding-block: 5px;
+  }
+}
+
+#nutrition .sub-nutrient td:first-of-type {
+  padding-left: 25px;
+  width: 60%;
+}
+
+#hamburger-menu {
+  left:-100vw;
+  transition: left 1s;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#notif-berhasil{
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.reset{
+  
+}
